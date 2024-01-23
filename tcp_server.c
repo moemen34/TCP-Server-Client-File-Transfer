@@ -166,14 +166,9 @@ int main(int argc, char **argv) {
       // loop over each line char by char until the
       //end of the line is reached
       while((ch = fgetc(textfile))!= '\n') {
-//putchar(ch);
-//printf("BETCH\n");
         if(ch == EOF){
-//              printf("HOE\n");
             break; //break once the end of the file is reached
         }
-//putchar(ch);
-//printf("\n");
         bufff[k] = ch;
         k++;
       }
@@ -182,7 +177,6 @@ int main(int argc, char **argv) {
       k=0;
 
       //send the line to the client
-//printf("line: %s, len: %ld\n", bufff, strlen(bufff));
       write(childfd, bufff, strlen(bufff));
       line++;
 
@@ -203,7 +197,7 @@ int main(int argc, char **argv) {
     }
 
     write(childfd, "#", 1);
-printf("\nend\n");
+    printf("\nend\n");
 
     fclose(textfile);
 
