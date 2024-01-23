@@ -1,7 +1,4 @@
 /*
- * Code to start Socket Programming in IECE/ICSI 416
- * Instructor: Prof. Dola Saha
- *
  * tcp_server.c - A simple TCP echo server
  *
  * Compile: gcc tcp_server.c -o tcp_server
